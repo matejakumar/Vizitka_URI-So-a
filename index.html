@@ -7,30 +7,33 @@
     <style>
         * { box-sizing: border-box; }
         body, html {
+            background-color: #f4f6f9;
             margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
+            padding: 20;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             }
-                    /* Prvi podnapis: odebeljen (bold) */
-            .subtitle {
-                font-weight: bold;
-                font-size: 16px; /* Po želji prilagodi velikost */
-                margin-bottom: 5px; /* Malo razmika pred naslednjo vrstico */
+                /* Glavna kartica vizitke */
+        .v-card {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 420px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
             }
-            
-            /* Drugi podnapis: manjši in navaden (ne bold) */
-            .sub-subtitle {
-                font-weight: normal; /* To poskrbi, da ni bold */
-                font-size: 14px;    /* Manjša pisava */
-                color: #555555;     /* Po želji: malo svetlejša siva barva, da se še bolj razlikuje */
-                margin-bottom: 15px;
-            }
+                    /* 1. ZGORNJI DEL: Obarvan modro #17a2b8 z imenom in sliko */
+        .v-card-header {
+            background-color: #17a2b8;
+            padding: 35px 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+
         /* Stil za video ozadje */
         #video-background {
             position: fixed;
@@ -73,8 +76,30 @@
             height: 120px;
             border-radius: 50%;
             object-fit: cover;
-            border: 4px solid #0077b5;
+            border: 4px solid #ffffff;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
         }
+                .v-card-header h2 {
+            margin: 0 0 5px 0;
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+                .v-card-header p {
+            margin: 0;
+            font-size: 16px;
+            color: #e0f7fa;
+            font-weight: 500;
+        }
+        /* Sredinska delilna črta pod modrim blokom */
+        .main-divider {
+            border: 0;
+            height: 1px;
+            background-color: #e0e0e0;
+            margin: 0;
+        }
+
         h1 { margin: 15px 0 5px 0; font-size: 24px; color: #222; }
         .subtitle { color: #555; font-size: 16px; margin-bottom: 20px; font-weight: 500; }
         .links { display: flex; flex-direction: column; gap: 10px; }
