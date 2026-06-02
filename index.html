@@ -16,21 +16,21 @@
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-        /* Prvi podnapis: odebeljen (bold) */
-.subtitle {
-    font-weight: bold;
-    font-size: 16px; /* Po želji prilagodi velikost */
-    margin-bottom: 5px; /* Malo razmika pred naslednjo vrstico */
-}
-
-/* Drugi podnapis: manjši in navaden (ne bold) */
-.sub-subtitle {
-    font-weight: normal; /* To poskrbi, da ni bold */
-    font-size: 14px;    /* Manjša pisava */
-    color: #555555;     /* Po želji: malo svetlejša siva barva, da se še bolj razlikuje */
-    margin-bottom: 15px;
-}
+            }
+                    /* Prvi podnapis: odebeljen (bold) */
+            .subtitle {
+                font-weight: bold;
+                font-size: 16px; /* Po želji prilagodi velikost */
+                margin-bottom: 5px; /* Malo razmika pred naslednjo vrstico */
+            }
+            
+            /* Drugi podnapis: manjši in navaden (ne bold) */
+            .sub-subtitle {
+                font-weight: normal; /* To poskrbi, da ni bold */
+                font-size: 14px;    /* Manjša pisava */
+                color: #555555;     /* Po želji: malo svetlejša siva barva, da se še bolj razlikuje */
+                margin-bottom: 15px;
+            }
         /* Stil za video ozadje */
         #video-background {
             position: fixed;
@@ -89,74 +89,74 @@
         .qr-section { margin-top: 25px; border-top: 1px solid #ddd; padding-top: 20px; }
         .qr-section p { font-size: 12px; color: #557; margin-bottom: 5px; }
          /* Glavni vsebnik, ki prisili elemente v navpično vrsto (stolpec) */
-.bottom-section-stack {
-    display: flex;
-    flex-direction: column; /* Vse zloži navpično */
-    align-items: center;    /* Centriranje levo-desno */
-    width: 100%;
-    margin-top: 30px;       /* Razmik od zgornjega dela vizitke (od službe za trženje) */
-}
+        .bottom-section-stack {
+        display: flex;
+        flex-direction: column; /* Vse zloži navpično */
+        align-items: center;    /* Centriranje levo-desno */
+        width: 100%;
+        margin-top: 30px;       /* Razmik od zgornjega dela vizitke (od službe za trženje) */
+        }
 
-/* Vsebnik za ikone - te morajo ostati vodoravno */
-.social-container {
-    display: flex;
-    gap: 20px;              /* Razmik med ikonami */
-    margin-bottom: 15px;    /* Razmik do črte */
-}
+        /* Vsebnik za ikone - te morajo ostati vodoravno */
+        .social-container {
+        display: flex;
+        gap: 20px;              /* Razmik med ikonami */
+        margin-bottom: 15px;    /* Razmik do črte */
+        }
 
-/* Osnovni stil za ikone (krogci) */
-.social-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    color: white;
-    text-decoration: none;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease;
-}
+        /* Osnovni stil za ikone (krogci) */
+        .social-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        color: white;
+        text-decoration: none;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: transform 0.2s ease;
+        }
 
-.social-icon:hover {
-    transform: scale(1.1);
-}
+        .social-icon:hover {
+        transform: scale(1.1);
+        }
 
-/* Barve ikon */
-.linkedin { background-color: #0077B5; }
-.facebook { background-color: #1877F2; }
-.email { background-color: #EA4335; }
+        /* Barve ikon */
+        .linkedin { background-color: #0077B5; }
+        .facebook { background-color: #1877F2; }
+        .email { background-color: #EA4335; }
 
-.social-icon svg {
-    width: 24px;
-    height: 24px;
-    fill: currentColor;
-}
+        .social-icon svg {
+        width: 24px;
+        height: 24px;
+        fill: currentColor;
+        }
 
-/* Delilna črta (Divider) */
-.divider-line {
-    width: 80%;             /* Črta ne gre čisto do roba, kar izgleda bolj elegantno */
-    border: 0;
-    height: 1px;
-    background-color: #e0e0e0; /* Nežna siva barva */
-    margin: 15px 0;
-}
-
-/* Tekst nad QR kodo */
-.qr-text {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    color: #333333;
-    margin: 0 0 10px 0;    /* Majhen razmik le navzdol proti QR kodi */
-    text-align: center;
-}
-
-/* QR koda */
-.qr-code {
-    width: 140px;           /* Prilagodi velikost QR kode po želji */
-    height: auto;
-    display: block;
-}
+        /* Delilna črta (Divider) */
+        .divider-line {
+            width: 80%;             /* Črta ne gre čisto do roba, kar izgleda bolj elegantno */
+            border: 0;
+            height: 1px;
+            background-color: #e0e0e0; /* Nežna siva barva */
+            margin: 15px 0;
+        }
+        
+        /* Tekst nad QR kodo */
+        .qr-text {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #333333;
+            margin: 0 0 10px 0;    /* Majhen razmik le navzdol proti QR kodi */
+            text-align: center;
+        }
+        
+        /* QR koda */
+        .qr-code {
+            width: 140px;           /* Prilagodi velikost QR kode po želji */
+            height: auto;
+            display: block;
+        }
        
     </style>
 </head>
